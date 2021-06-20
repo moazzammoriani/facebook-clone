@@ -1,45 +1,103 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(228, 230, 235);
+    font-size: 15px;
+}
+
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    background-color: #18191a;
+
     
+}
+
+.navbar {
+    display: flex;
+    background-color: #242526;
+    height: 55px;
+    border-bottom: 0.01px solid rgb(78, 78, 78);
+    justify-content: space-between;
+
+} 
+
+.nav-sub-box {
+    width: 224px;
+}
+
+.nav-sub-left {
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+}
+
+.navbar span {
+    display: inline-block;
+    height: 25px;
+}
+
+.navbar path {
+    fill: #b0b3b8;
+    color: #b0b3b8;
+}
+
+
+.nav-sub-center {
+    width: 690px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-box-sub-box{
+    display: flex;
+    align-content: center;
+    height: 23px;
+    margin-left: 50px;
+}
+
+#search-box {
+    background-color: #3a3b3c;
+    border: none;
+
+}
+
+.nav-sub-right {
+    display: flex;
+    margin-left: 15px;
+
+    
+}
+
+.nav-sub-right .circle{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav-right-icon {
+    margin-left: 8px;
+    margin-top: 8px;
 }
 
 .below-nav {
     display: flex;
-    background-color:blue;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    flex-direction: row;
+    min-height: 100vh;
     justify-content: center;
-
-}
-
-.navbar {
-    background-color: #242526;
-    height: 50px;
-    border-bottom: 0.01px solid rgb(78, 78, 78);   
 }
 
 .left-box {
-    background-color: #1c1e21;
-    width: 330px;
-    
-
+    width: 360px;
 }
 
 .right-box { 
-    background-color: #1c1e21;
-    width: 200px;
-    justify-self: flex-end;
-
+    width: 360px;
 }
 
 .center-box {
-    background-color: #1c1e21;
-    width: 480px;
-    flex-grow: 2;
-    
+    width: 1185px;
+    display: flex;
+    justify-content: center;
 }
 
 .left-options {
@@ -49,14 +107,11 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     width: 95%;
-    height: 585px;
-    background-color: #1c1e21;
     border-bottom: 0.01px solid rgb(78, 78, 78);
     
 }
 
 .btn {
-    background-color: #3a3b3c;
     height: 52px;
 }
 
@@ -70,15 +125,127 @@ body {
 }
 
 .btn-img {
-    height: 35px;
+    height: 36px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
-#thisbox {
-    height: 100%;
+.circle {
+    background-color: #303031;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+#see-more {
+    width: 20px;
+    height: 20px;
+    margin-left: 7.5px;
+    margin-top: 8px;
 }
 
 .btn-content {
     margin-left: 10px;
+}
+
+.btn:hover {
+    background-color: #3a3b3c;
+}
+
+.sponsored {
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 0.01px solid rgb(78, 78, 78);   
+}
+
+.contacts {
+    height: 50px;
+}
+
+/* The Center Content Styles */
+.main-content {
+    width: 688px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.stories-container {
+    margin-top: 20px;
+    display: flex;
+    height: 200px;
+    padding: 5px 5px;
+    justify-content: space-between;
+}
+
+.story-box {
+    height:190px;
+    width: 106.67px;
+    background-color: grey;
+    border-radius: 10px; 
+}
+
+.posting-prompt {
+    background-color: #242526;
+    margin-top: 10px;
+    height: 123px;
+    width: 688px ;
+    border-radius: 10px;
+}
+
+.posting-prompt-sub-box {
+    width: 668px;
+    height: 84px;
+    margin: auto;
+    margin-top: 12px;
+}
+
+
+.posting-prompt-sub-upper-half img {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.posting-prompt-input-container {
+    float: left;
+    margin-left: 9px;
+    padding-top: 10px;
+    padding-left: 12px;
+    height: 32px;
+    width: 588px;
+    border-radius: 30px;
+    background-color: #3a3b3c;
+}
+
+#posting-input {
+    width: 428px;
+    background-color: #3a3b3c;
+    border: none;
+}
+
+.posting-prompt-sub-lower-half {
+    margin: auto;
+    clear: both;
+    position: relative;
+    bottom: -12px;
+    height: 50px;
+    width: 650px;
+    border-top: 0.01px solid rgb(78, 78, 78);
+}
+
+
+.prompt-btn img {
+    width: 30px;
+}
+
+.prompt-btn {
+    display: flex;
+    margin-top: 8px;
+    float: left;
+    height: 40px;
+    width: 33.3333%;
+    text-align: center;
+    justify-content: center;
+    
 }
