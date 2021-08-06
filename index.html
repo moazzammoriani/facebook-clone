@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -12,7 +13,12 @@
             <div class="search-box-and-logo nav-sub-box nav-sub-left">
                 <img src="images/facebook-logo.png" style="width: 40px; height: 40px; display:inline-block">
                 <div class="search-box-sub-box">
-                    <input id="search-box" type="search" text="Search Facebook">
+                    <div class="search-icon-container">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search-box">
+                    <input id="search-box" type="search" placeholder="Search Facebook">
+                    </div>
                 </div>
             </div>
             <div class="nav-sub-box nav-sub-center">
@@ -81,12 +87,38 @@
             <div class="center-box">
                 <div class="main-content">
                     <div class="stories-container">
-                        <div class="story-box create-story"></div>
-                        <div class="story-box story1"></div>
-                        <div class="story-box story2"></div>
-                        <div class="story-box story3"></div>
-                        <div class="story-box story4"></div>
-                        <div class="story-box story5"></div>
+                        <div class="story-box create-story">
+                            <img src="images/profile_picture.jpg">
+                            <div class="create-story-btn"></div>
+                        </div>
+                        <div class="story-box friend-story story1">
+                            <div class="story-profile">
+                                <img src="images/profile_ali.jpg" class="story-profile-img">
+                            </div>
+                        </div>
+                        <div class="story-box friend-story story2">
+                            <div class="story-profile">
+                                <img src="images/profile_jenny.jpg" class="story-profile-img">
+                            </div>
+                        </div>
+                        <div class="story-box friend-story story3">
+                            <div class="story-profile">
+                                <img src="images/profile_daniel.jpg" class="story-profile-img">
+                            </div>
+                        </div>
+                        <div class="story-box friend-story story4">
+                            <div class="story-profile">
+                                <img src="images/profile_tasha.jpg" class="story-profile-img">
+                            </div>
+                        </div>
+                        <div class="story-box friend-story story5">
+                            <div class="story-profile">
+                                <img src="images/profile_james.jpg" class="story-profile-img">
+                            </div>
+                        </div>
+                        <div class="see-all-stories">
+                            
+                        </div>
                     </div>
                     <div class="posting-prompt">
                         <div class="posting-prompt-sub-box">
@@ -111,80 +143,166 @@
                             </div>
                         </div>
                     </div>
-                    <div class="create-room"></div>
-                    <div class="post1"></div>
+                    <div class="center-object create-room">
+                        <div class="btn create-room-btn">
+                            <i data-visualcompletion="css-img" class="hu5pjgll" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/rG4b5J-vt9i.png');background-position:0 -219px;background-size:auto;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                            <span>Create Room</span>
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_ali.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_jenny.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_lamar.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_conan.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_tasha.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_james.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_abhijek.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_ted.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_earl.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_collin.jpg" class="btn-img">
+                        </div>
+                        <div class="create-room-user">
+                            <img src="images/profile_mary.jpg" class="btn-img">
+                        </div>
+                    </div>
+                    <div class="center-object post-card post1">
+                        <div class="post-card-header">
+                            <div class="post-profile create-room-user">
+                                <img src="images/profile_donald.jpg" class="btn-img">
+                            </div>
+                            <div class="post-optn-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <span class="post-username">Donald J. Trump</span>
+                            <span class="post-time-and-privacy">2 h ⋅ <i class="fa fa-globe" aria-hidden="true"></i> </span>
+                        </div>
+                        <div class="post-card-content">
+                            <p>Despite all the negative press covfefe</p>
+                        </div>
+                        <div class="post-card-footer">
+                            <div class="like-comment-share-box-container">
+                                <div class="btn prompt-btn like-comment-share-btn">
+                                    <div class="like-icon lcs-icon">
+                                        <i class="far fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="like-text lcs-text">
+                                        <span>Like</span>
+                                    </div>
+                                </div>
+                                <div class="btn prompt-btn like-comment-share-btn">
+                                    <div class="comment-icon lcs-icon">
+                                        <i class="far fa-comment-alt"></i>
+                                    </div>
+                                    <div class="comment-text lcs-text">
+                                        <span>Comment</span>
+                                    </div>
+                                </div>
+                                <div class="btn prompt-btn like-comment-share-btn">
+                                    <div class="share-icon lcs-icon">
+                                        <i class="fas fa-share"></i>
+                                    </div>
+                                    <div class="share-text lcs-text">
+                                        <span>Share</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posting-prompt-sub-upper-half">
+                                <img src="images/profile_picture.jpg" class="btn-img">
+                                <div class="posting-prompt-input-container cmnt-input-container"> 
+                                    <input id="cmnt-input" type="text" placeholder="Write a comment">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="right-box">
                 <div class="sponsored">Sponsored</div>
                 <div class="contacts">Contacts</div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_ted.jpg" class="btn-img">
+                    <div class="btn-content">Ted Jones</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_jenny.jpg" class="btn-img">
+                    <div class="btn-content">Jenny Loggins</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_abhijek.jpg" class="btn-img">
+                    <div class="btn-content">Abhijhek Natharwal</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_lamar.jpg" class="btn-img">
+                    <div class="btn-content">Lamar Clinton</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_tania.jpg" class="btn-img">
+                    <div class="btn-content">Tania Jamal</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_mary.jpg" class="btn-img">
+                    <div class="btn-content">Mary Wells</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_kirk.jpg" class="btn-img">
+                    <div class="btn-content">Kirk Conners</div>
                 </div>    
                  <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_mitch.jpg" class="btn-img">
+                    <div class="btn-content">Mitch Miller</div>
                 </div>   
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_tasha.jpg" class="btn-img">
+                    <div class="btn-content">Tasha Davis</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_earl.jpg" class="btn-img">
+                    <div class="btn-content">Earl Black</div>
                 </div>    
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_kathy.jpg" class="btn-img">
+                    <div class="btn-content">Kathy Felix</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_daniel.jpg" class="btn-img">
+                    <div class="btn-content">Daniel Brown</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_conan.jpg" class="btn-img">
+                    <div class="btn-content">Conan Tess</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_laura.jpg" class="btn-img">
+                    <div class="btn-content">Laura May</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_natalie.jpg" class="btn-img">
+                    <div class="btn-content">Natalie McBride</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_james.jpg" class="btn-img">
+                    <div class="btn-content">James McCarthy</div>
                 </div>
                 <div class="btn left-options-btn">
-                    <img src="images/profile_picture.jpg" class="btn-img">
-                    <div class="btn-content">Friend</div>
+                    <img src="images/profile_ali.jpg" class="btn-img">
+                    <div class="btn-content">Ali Faiz</div>
                 </div>
             </div>
         <main>
