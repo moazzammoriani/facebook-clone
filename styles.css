@@ -81,19 +81,38 @@ body {
     display: inline-block;
     height: 1.5em;
     border: none;
-
 }
 
 .nav-sub-right {
     display: flex;
-    margin-left: 15px;
-
-    
+    width: 280px;
+    margin-right: 15px;
+    justify-content: space-evenly;
 }
 
-.nav-sub-right .circle{
-    margin-top: 10px;
+.top-right-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
     margin-left: 10px;
+}
+
+.top-right-profile span {
+    height: 18px;
+    width: 50px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.top-right-profile img {
+    width: 28px;
+    border-radius: 50%;
+}
+
+
+.circle{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .nav-right-icon {
@@ -119,6 +138,7 @@ body {
     width: 1185px;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .left-options {
@@ -449,3 +469,102 @@ body {
     background-color: #3a3b3c;
     border: none;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    padding: 15px 15px;
+    background-color: #242526;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    width: 360px;
+    height: 428px;
+    z-index: 1;
+}
+
+.dropdown-profile-btn {
+    display: flex;
+    padding: 10px 15px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.dropdown-profile-btn:hover {
+    background-color: #3a3b3c;
+    cursor: pointer;
+    
+}
+
+.dropdown-profile-img {
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+}
+
+.dropdown-profile-info {
+    margin-left: 20px;
+}
+
+.dropdown-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dropdown-content-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content-btn {
+    text-align: center;
+}
+
+.fa-cog {
+    line-height: 36px;
+    font-size: 20px;
+}
+
+.hide-dropdown {display: none}
+
+.top-right-nav-btn:hover {
+    background-color: #3a3b3c;
+    cursor: pointer;
+}
+
+.dropdown-settings-text {
+    margin-left: 40px;
+    font-size: 17px;
+}
+
+.settings-container {
+    padding: 30px 30px;
+    background-color: black;
+    width: 785px;
+}
+
+.settings-container h1 {
+    padding: 30;
+    font-size: 20px;
+}
+
+.settings-entries-container {
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+}
+
+.settings-entry {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.settings-input-column input, button {
+    color: black;
+}
+
