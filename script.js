@@ -45,7 +45,9 @@ for (let i =0; i<namePlaces.length; i++) {
 }
 
 firstNamePlaces = document.querySelectorAll(".first-name-place");
-nameArr = localStorage.getItem("name").split(" ");
+if (localStorage.getItem("name") != null){
+    nameArr = localStorage.getItem("name").split(" ");
+}
 
 for (let i = 0; i < firstNamePlaces.length; i++) {
     firstNamePlaces[i].innerText = nameArr[0];
