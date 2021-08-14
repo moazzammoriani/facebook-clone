@@ -47,11 +47,12 @@ for (let i =0; i<namePlaces.length; i++) {
 firstNamePlaces = document.querySelectorAll(".first-name-place");
 if (localStorage.getItem("name") != null){
     nameArr = localStorage.getItem("name").split(" ");
+    for (let i = 0; i < firstNamePlaces.length; i++) {
+        firstNamePlaces[i].innerText = nameArr[0];
+    }
 }
 
-for (let i = 0; i < firstNamePlaces.length; i++) {
-    firstNamePlaces[i].innerText = nameArr[0];
-}
+
 
 // Make the "Feeling/Activity button an trigger for generating new users
 feelingAndActivityBtn = document.querySelector(".feeling-activity-btn")
